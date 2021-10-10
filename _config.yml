@@ -5,15 +5,14 @@ language: zh-Hans
 # main menu navigation
 menu:
   home: /
-  archives: /archives
-  tags: /tags
-  #categories: /categories
-  search: /search
-  about: https://0xff000000.com
+  # archives: /archives
+  # tags: /tags
+  # categories: /categories
+  # search: /search
   rss: /atom.xml
 
-# Miscelaneous
-favicon: /logo.png
+# website logo
+logo: https://www.hufeifei.cn/favicon.jpg
 
 # stylesheets loaded in the <head>
 stylesheets:
@@ -30,6 +29,6 @@ scripts:
 show_excerpt: true
 show_date: true
 #footer
-index_page: https://blog.0xff000000.com
-main_site: https://0xff000000.com
-github: https://github.com/KevinOfNeu
+index_page: https://www.hufeifei.cn
+blog_page: https://blog.hufeifei.cn
+github: https://github.com/holmofy
