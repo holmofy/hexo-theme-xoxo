@@ -6,7 +6,7 @@ language: zh-Hans
 menu:
   home: /
   # archives: /archives
-  # tags: /tags
+  tags: /tags
   # categories: /categories
   # search: /search
   rss: /atom.xml
