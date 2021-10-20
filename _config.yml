@@ -32,3 +32,13 @@ show_date: true
 index_page: https://www.hufeifei.cn
 blog_page: https://blog.hufeifei.cn
 github: https://github.com/holmofy
+
+friends:
+  - name: draveness
+    url: https://draveness.me/
+  - name: CoolShell
+    url: https://coolshell.cn/
+  - name: martin kleppmann
+    url: https://martin.kleppmann.com/
+  - name: 韦易笑
+    url: http://www.skywind.me/blog/
