@@ -1,13 +1,13 @@
 <footer class="footer text-center">
     <div id="bottom-inner">
-        <a class="bottom-item" href="<%=theme.index_page%>">首页</a>
-        <a class="bottom-item" href="<%=theme.blog_page%>" target="_blank">个人博客</a>
-        <a class="bottom-item" href="<%=theme.github%>" target="_blank">GitHub</a>
+        <a class="bottom-item" href="<%=theme.index_page%>">首页</a> |
+        <a class="bottom-item" href="<%=theme.blog_page%>" target="_blank">个人博客</a> |
+        <a class="bottom-item" href="<%=theme.github%>" target="_blank">GitHub</a> |
         <a class="bottom-item" href="https://hexo.io" target="_blank">Powered by hexo</a>
     </div>
     <% if (theme.friends) {%>
     <div>
-        <span class="bottom-item">友情链接</span>
+        <span class="bottom-item">友情链接: </span>
         <% theme.friends.forEach(function({name,url}) { %>
         <a class="bottom-item" href="<%=url%>"><%=name%></a>
         <% }); %>

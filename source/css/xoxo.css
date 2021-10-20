@@ -101,9 +101,6 @@ footer .bottom-item {
   margin-left: 5px;
   margin-right: 5px;
 }
-footer .bottom-item + .bottom-item {
-  border-left: 1px solid #999;
-}
 footer .bottom-item:hover {
   color: #2196F3;
 }
