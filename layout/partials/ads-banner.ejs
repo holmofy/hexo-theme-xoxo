@@ -1,0 +1,38 @@
+<% if(theme.ads && theme.ads.length !== 0) { %>
+<div class="ads-banner">
+    <div class="swiper-wrapper">
+        <% theme.ads.forEach(function(ad){%>
+        <a class="swiper-slide" href="<%=ad.url%>" title="<%=ad.title%>">
+            <img src="<%=ad.img%>" />
+            <% if(ad.show_title) { %>
+            <span><%=ad.title%></span>
+            <% } %>
+        </a>
+        <% });%>
+    </div>
+    <div aria-label="Previous" class="swiper-button-prev"></div>
+    <div aria-label="Next" class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+</div>
+<script>
+    window.addEventListener('load', function () {
+        var swiper = new Swiper(".ads-banner", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }, false);
+</script>
+<% } %>
