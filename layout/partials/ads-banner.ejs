@@ -1,7 +1,7 @@
-<% if(theme.ads && theme.ads.length !== 0) { %>
+<% if(theme.ads.enabled && theme.ads.assets && theme.ads.assets.length !== 0) { %>
 <div class="ads-banner">
     <div class="swiper-wrapper">
-        <% theme.ads.forEach(function(ad){%>
+        <% theme.ads.assets.forEach(function(ad){%>
         <a class="swiper-slide" href="<%=ad.url%>" title="<%=ad.title%>">
             <img src="<%=ad.img%>" />
             <% if(ad.show_title) { %>
@@ -16,23 +16,18 @@
 </div>
 <script>
     window.addEventListener('load', function () {
-        var swiper = new Swiper(".ads-banner", {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                type: "progressbar",
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    }, false);
+            let options = <%-JSON.stringify(Object.assign({
+                pagination: {
+                    el: ".swiper-pagination",
+                    type: "progressbar"
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                }
+            }, theme.ads.swiper_options)) %> ;
+            var swiper = new Swiper(".ads-banner", options);
+        },
+        false);
 </script>
 <% } %>
