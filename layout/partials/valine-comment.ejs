@@ -1,0 +1,10 @@
+<% if(theme.valine && theme.valine.enable) {%>
+<div id="vcomments" style="padding: 10px 50px;"></div>
+<script>
+    window.addEventListener('load', function () {
+        new Valine(<%-JSON.stringify(Object.assign({
+            el: '#vcomments'
+        }, theme.valine))%>);
+    });
+</script>
+<%}%>

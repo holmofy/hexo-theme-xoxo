@@ -23,6 +23,7 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
   - //unpkg.com/swiper/swiper-bundle.min.js
+  - //unpkg.com/valine/dist/Valine.min.js
 #- //cdn.bootcss.com/zepto/1.2.0/zepto.min.js
 #- /js/xoxo.js
 
@@ -33,6 +34,18 @@ show_date: true
 index_page: https://www.hufeifei.cn
 blog_page: https://blog.hufeifei.cn
 github: https://github.com/holmofy
+
+valine:
+  enable: true
+  appId: 8Yo6tv65sOStsPwvGSOAmOtM-gzGzoHsz
+  appKey: IJPXPCV29V5ja34nj1JL3tQe
+  pageSize: 10 # comment list page size
+  avatar: mm # gravatar style https://valine.js.org/#/avatar
+  lang: zh-cn # i18n: zh-cn/en
+  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+  visitor: true
+  recordIP: true
+  requiredFields: ['nick']
 
 friends:
   - name: draveness

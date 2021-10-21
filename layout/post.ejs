@@ -21,8 +21,8 @@
         </span>
       </span>
       <span class="slash">/</span>
-      <span class="read">
-        <span id="busuanzi_value_page_pv"></span> 点击
+      <span id="<%=page.path%>" class="read leancloud_visitors" data-flag-title="<%=page.title%>">
+        <span class="leancloud-visitors-count"></span> 点击
       </span>
       <span class="slash">/</span>
       <span class="read">阅读耗时 <%=readingTime(page.content, '分钟') %></span>
@@ -44,4 +44,4 @@
 <%- partial('partials/copyright') %>
 <%- partial('partials/share') %>
 <%- partial('partials/prenext') %>
-<%- partial('partials/disqus') %>
+<%- partial('partials/valine-comment') %>
