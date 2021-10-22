@@ -1,5 +1,5 @@
 # html lang
-language: zh-Hans
+language: zh-CN
 
 # main menu navigation
 menu:
@@ -23,7 +23,7 @@ stylesheets:
 # scripts loaded in the end of the body
 scripts:
   - //unpkg.com/swiper/swiper-bundle.min.js
-  - //unpkg.com/valine/dist/Valine.min.js
+  - //cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js
 #- //cdn.bootcss.com/zepto/1.2.0/zepto.min.js
 #- /js/xoxo.js
 
@@ -35,10 +35,13 @@ index_page: https://www.hufeifei.cn
 blog_page: https://blog.hufeifei.cn
 github: https://github.com/holmofy
 
+# valine comment system. https://valine.js.org
 valine:
   enable: true
   appId: 8Yo6tv65sOStsPwvGSOAmOtM-gzGzoHsz
   appKey: IJPXPCV29V5ja34nj1JL3tQe
+  notify: false # valine mail notify (true/false) https://github.com/xCss/Valine/wiki
+  verify: false # valine verify code (true/false)
   pageSize: 10 # comment list page size
   avatar: mm # gravatar style https://valine.js.org/#/avatar
   lang: zh-cn # i18n: zh-cn/en
