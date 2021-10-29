@@ -59,6 +59,8 @@ friends:
     url: https://martin.kleppmann.com/
   - name: skywind
     url: http://www.skywind.me/blog/
+  - name: duanple
+    url: http://duanple.com/
 
 ads:
   enabled: true
