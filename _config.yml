@@ -16,7 +16,7 @@ logo: https://www.hufeifei.cn/favicon.jpg
 # stylesheets loaded in the <head>
 stylesheets:
   # - /css/normalize.css
-  - //cdn.bootcss.com/pure/1.0.0/pure-min.css
+  - //unpkg.com/purecss@1.0.0/build/pure-min.css
   - //unpkg.com/swiper/swiper-bundle.min.css
   - /css/xoxo.css
 
